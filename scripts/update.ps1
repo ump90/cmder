@@ -104,7 +104,7 @@ function Fetch-DownloadUrl {
 
     $headers = @{}
 
-    if ($($env:GITHUB_TOKEN)) {
+    if ($env:GITHUB_TOKEN) {
         $headers["Authorization"] = "token $($env:GITHUB_TOKEN)"
     }
 
